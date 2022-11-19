@@ -1,4 +1,4 @@
-const form = document.querySelector(`.login-form`); I
+const form = document.querySelector('.login-form');
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     const {
@@ -10,3 +10,19 @@ form.addEventListener("submit", (event) => {
    console.log(`email: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
 })
+
+// form.addEventListener("submit", handleSubmit);
+
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   const {
+//     elements: { email, password }
+//   } = event.currentTarget;
+
+//   if (email.value === "" || password.value === "") {
+//     alert("Bci поля повинні бути заповнені");
+//   }
+
+//   console.log(`Email: ${email.value}, Password: ${password.value}`);
+//   event.currentTarget.reset();
+// }
